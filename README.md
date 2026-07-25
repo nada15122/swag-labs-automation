@@ -10,22 +10,20 @@ You can view the full interactive **Allure Report** for the latest test executio
 👉 **[View Live Allure Report](https://nada15122.github.io/swag-labs-automation/allure-report/)**
 
 ---
-
 ## ✨ Features & Automated Test Scenarios
 
-The framework covers critical end-to-end user journeys and features, including:
+The framework covers critical user journeys and features, including:
 
-* 🔑 **Authentication & User Login:**
+* 🔑 **Authentication & User Login (`LoginTest`):**
   * Valid login with standard credentials.
   * Invalid login assertions (locked-out user, empty fields, wrong password).
-* 🛒 **Product Catalog & Cart Management:**
-  * Sorting products by Name (A-Z, Z-A) and Price (low-to-high, high-to-low).
-  * Adding and removing single or multiple products to/from the cart.
-  * Verifying cart badge count dynamically.
-* 💳 **Checkout Workflow:**
-  * Completing buyer information details.
-  * Validating item totals, tax calculations, and final order summary.
-  * Finishing order execution and asserting the successful confirmation message.
+  * Asserting correct error messages on failed login attempts.
+
+* 🛒 **Product Catalog & Cart Management (`InventoryTest`):**
+  * Verifying product inventory display and details.
+  * Adding single and multiple products to the shopping cart.
+  * Removing items from the cart.
+  * Asserting dynamic updates to the shopping cart badge count.
 
 ---
 
